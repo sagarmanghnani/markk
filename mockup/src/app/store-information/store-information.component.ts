@@ -9,7 +9,7 @@ import { ReviewService } from 'src/services/review.service';
 })
 export class StoreInformationComponent implements OnInit {
 
-  storeDetails:StoreDetails[] = [];
+  storeDetail:StoreDetails = new StoreDetails;
   constructor(
     public reviewService:ReviewService
   ) { }
@@ -22,8 +22,13 @@ export class StoreInformationComponent implements OnInit {
 
   getAllStoreDetails(){
     this.reviewService.getAllStoreDetails().subscribe(res => {
-      console.log(res);
+      this.storeDetail = res[0];
+      console.log(this.storeDetail);
     });
+  }
+
+  storeRating(){
+    return `../../assets/${this.storeDetail.store_rating_icon}.png`;
   }
 
 

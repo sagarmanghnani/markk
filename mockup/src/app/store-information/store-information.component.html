@@ -1,3 +1,25 @@
-<p>
-  store-information works!
-</p>
+
+
+<div *ngIf="storeDetail?.store_id">
+  
+    <div class="rating-container">
+        <img [src]="storeRating()" alt="store-rating" style="position: absolute;bottom: 0;">
+    </div>
+<ion-card class="store-card">
+  <div class="store-name">
+    {{storeDetail?.store_name}}
+  </div>
+
+  <div class="store-upper-location">
+    {{storeDetail?.store_city}} {{storeDetail?.store_country}}
+  </div>
+
+  <div class="store-type">
+    Restaurant
+  </div>
+
+  <div class="store-lower-location">
+    {{storeDetail?.store_address}}
+  </div>
+</ion-card>
+</div>

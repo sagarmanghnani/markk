@@ -6,4 +6,5 @@ export class StoreDetails {
     store_address:string;
     store_location:string;
     store_rating_icon:string;
+    store_type:string;
 }

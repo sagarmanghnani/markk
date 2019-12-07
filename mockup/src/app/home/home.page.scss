@@ -1,4 +1,21 @@
 .header-container{
     padding-top: 10px;
     background: var(--header-color);
+    height: fit-content;
+}
+
+.store-information{
+    background: black;
+    height: 100%;
+    .store-detail-container{
+        margin-top:70px !important;
+        width: 80%;
+        margin: auto;
+    }
+
+    @media screen and (max-width:576px){
+        .store-detail-container{
+            width: 100%;
+        }
+    }
 }

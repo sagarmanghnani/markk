@@ -1,0 +1,60 @@
+
+.rating-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 65px;
+    z-index: 2;
+}
+.store-card{
+    border: 1px solid gray;
+    .store-name{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 2.2rem;
+        color: var(--primary-text);
+        font-weight: bold;
+    }
+
+
+    .store-upper-location{
+        color: var(--secondary-text);
+        text-align: center;
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .store-type{
+        text-align: center;
+        margin-top: 10px;
+        color: var(--tertiary-text);
+        font-size: 1.3rem;
+    }
+
+    .store-lower-location{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.3rem;
+        color: var(--tertiary-text);
+    }
+
+    @media screen and (max-width:576px) {
+        .store-name{
+            font-size: 1.8rem;
+        }
+
+        .store-upper-location{
+            font-size: 1.1rem;;
+        }
+
+        .store-type{
+            font-size: 1.1rem;
+        }
+
+        .store-lower-location{
+            font-size: 1rem;
+        }
+    }
+}
