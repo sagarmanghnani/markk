@@ -1,11 +1,19 @@
 {
     "org_details": [
         {
-            "id":"1",
-            "org_name":"Egg slut",
-            "address":"61, vidhya park",
-            "rating_icon": "ratings-label-dope-112",
-            "org_photos": ["https://picsum.photos/200"]
+            "store_id":"1",
+            "store_name":"Egg slut",
+            "store_rating_icon": "ratings-label-dope-112",
+            "store_country": "United States",
+            "store_city": "Los Angeles",
+            "store_address": "1611 Pacific Ave, Venice, CA 90291, United States",
+            "store_location": "XGPH+W4 Venice, Los Angeles, CA, United States"
+        }
+    ],
+    "user": [
+        {
+            "checking": "red"
         }
     ]
 }
+

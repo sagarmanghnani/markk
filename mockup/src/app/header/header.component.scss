@@ -1,0 +1,26 @@
+.review-page-container{
+    background: var(--header-color);
+    border-bottom: 2px solid gray;
+    .review-page{
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        // margin-top: 10px;
+        margin-bottom: 10px;
+        .header{
+            display: flex;
+            align-items: center;
+            img{
+                height: 60px;
+            }
+            .get-mark-btn{
+                margin-left: auto;
+                ion-button{
+                    button{
+                        background: #48a47e;
+                    }
+                }
+            }
+        }
+    }
+}
