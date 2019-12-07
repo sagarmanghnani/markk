@@ -1,10 +1,11 @@
 {
-    "respons": [
+    "org_details": [
         {
             "id":"1",
             "org_name":"Egg slut",
-            "address":"61, vidhya park"
-        
+            "address":"61, vidhya park",
+            "rating_icon": "ratings-label-dope-112",
+            "org_photos": ["https://picsum.photos/200"]
         }
     ]
 }
