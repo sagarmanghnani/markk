@@ -7,5 +7,10 @@
             "rating_icon": "ratings-label-dope-112",
             "org_photos": ["https://picsum.photos/200"]
         }
+    ],
+     "user": [
+        {
+            "checking": "red"
+        }
     ]
 }
