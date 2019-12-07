@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 import { StoreInformationComponent } from 'src/app/store-information/store-information.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReviewService } from 'src/services/review.service';
+import { UserRatingCardComponent } from 'src/app/user-rating-card/user-rating-card.component';
 
 
 
@@ -18,11 +19,16 @@ import { ReviewService } from 'src/services/review.service';
     ],
     declarations: [
         HeaderComponent,
-        StoreInformationComponent
+        StoreInformationComponent,
+        UserRatingCardComponent
     ],
     providers: [
         ReviewService
     ],
-    exports: [HeaderComponent, StoreInformationComponent]
+    exports: [
+        HeaderComponent,
+        StoreInformationComponent,
+        UserRatingCardComponent
+    ]
 })
 export class SharedModule {}

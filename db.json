@@ -8,12 +8,19 @@
             "store_city": "Los Angeles",
             "store_address": "1611 Pacific Ave, Venice, CA 90291, United States",
             "store_location": "https://goo.gl/maps/F2k1fTT2ncTzuJcL9",
-            "store_type":"string"
+            "store_type":"restaurant"
         }
     ],
-    "user": [
+    "user_rating": [
         {
-            "checking": "red"
+           "user_id":1,
+           "user_profile_pic":"https://via.placeholder.com/150/24f355",
+           "user_rating_pic":"https://picsum.photos/200",
+           "user_rating_icon":"ratings-label-dope-112",
+           "pics_count":10,
+           "likes":120,
+           "comments":42,
+           "forwards":10
         }
     ]
 }
