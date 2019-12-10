@@ -1,5 +1,5 @@
 import { ReviewService } from 'src/services/review.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { UserRating } from 'src/modals/user-ratings';
 
 @Component({
@@ -9,13 +9,22 @@ import { UserRating } from 'src/modals/user-ratings';
 })
 export class UserRatingCardComponent implements OnInit {
 
-  userRatings:UserRating = new UserRating();
+  @Input() userRatings:UserRating
   constructor(
     public reviewService:ReviewService
   ) { }
 
   ngOnInit() {
-    this.getUserRatingOnStore();
+    // this.getUserRatingOnStore();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+    //Add '${implements OnChanges}' to the class.
+    if(changes && changes['userRatings'] && changes['userRatings'].currentValue && changes['userRatings'].currentValue.user_id){
+      this.userRatings = changes['userRatings'].currentValue;
+      console.log(this.userRatings, "userratings");
+    }
   }
 
   getUserRatingOnStore():void {

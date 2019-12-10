@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UserRating } from 'src/modals/user-ratings';
+import { ReviewService } from 'src/services/review.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  userRatings:UserRating[] = [];
+  constructor(
+    public reviewService:ReviewService
+  ) {
+    this.getUserRatingOnStore()
+  }
 
+
+  getUserRatingOnStore():void {
+    this.reviewService.getAllUserRatingForStore().subscribe(res => {
+      this.userRatings = res;
+      console.log(this.userRatings);
+    });
+  }
 }

@@ -21,6 +21,56 @@
            "likes":120,
            "comments":42,
            "forwards":10
-        }
+        },
+        {
+            "user_id":2,
+            "user_profile_pic":"https://i.pravatar.cc/500",
+            "user_rating_pic":"https://picsum.photos/450/300",
+            "user_rating_icon":"ratings-label-dope-112",
+            "pics_count":40,
+            "likes":130,
+            "comments":50,
+            "forwards":90
+         },
+         {
+            "user_id":3,
+            "user_profile_pic":"https://i.pravatar.cc/500",
+            "user_rating_pic":"https://picsum.photos/450/300",
+            "user_rating_icon":"ratings-label-dope-112",
+            "pics_count":20,
+            "likes":20,
+            "comments":42,
+            "forwards":100
+         },
+         {
+            "user_id":4,
+            "user_profile_pic":"https://i.pravatar.cc/500",
+            "user_rating_pic":"https://picsum.photos/450/300",
+            "user_rating_icon":"ratings-label-dope-112",
+            "pics_count":190,
+            "likes":120,
+            "comments":42,
+            "forwards":10
+         },
+         {
+            "user_id":5,
+            "user_profile_pic":"https://i.pravatar.cc/500",
+            "user_rating_pic":"https://picsum.photos/450/300",
+            "user_rating_icon":"ratings-label-dope-112",
+            "pics_count":70,
+            "likes":100,
+            "comments":22,
+            "forwards":10
+         },
+         {
+            "user_id":6,
+            "user_profile_pic":"https://i.pravatar.cc/500",
+            "user_rating_pic":"https://picsum.photos/450/300",
+            "user_rating_icon":"ratings-label-dope-112",
+            "pics_count":10,
+            "likes":9020,
+            "comments":22,
+            "forwards":10
+         }
     ]
 }
