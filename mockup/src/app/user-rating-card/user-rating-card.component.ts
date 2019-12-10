@@ -1,4 +1,6 @@
+import { ReviewService } from 'src/services/review.service';
 import { Component, OnInit } from '@angular/core';
+import { UserRating } from 'src/modals/user-ratings';
 
 @Component({
   selector: 'app-user-rating-card',
@@ -7,8 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserRatingCardComponent implements OnInit {
 
-  constructor() { }
+  userRatings:UserRating = new UserRating();
+  constructor(
+    public reviewService:ReviewService
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.getUserRatingOnStore();
+  }
+
+  getUserRatingOnStore():void {
+    this.reviewService.getAllUserRatingForStore().subscribe(res => {
+      this.userRatings = res[0];
+      console.log(this.userRatings);
+    });
+  }
+
+  getCardBackgroundImage():string{
+    return `url(${this.userRatings.user_rating_pic})`;
+  }
+
+  getUserRating():string {
+    return `../../assets/${this.userRatings.user_rating_icon}.png`;
+  }
+
+  
+
 
 }

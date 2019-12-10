@@ -24,14 +24,14 @@ export class StoreInformationComponent implements OnInit {
   }
 
 
-  getAllStoreDetails(){
+  getAllStoreDetails():void{
     this.reviewService.getAllStoreDetails().subscribe(res => {
       this.storeDetail = res[0];
       console.log(this.storeDetail);
     });
   }
 
-  storeRating(){
+  storeRating():string{
     return `../../assets/${this.storeDetail.store_rating_icon}.png`;
   }
 

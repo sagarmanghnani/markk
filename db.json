@@ -14,8 +14,8 @@
     "user_rating": [
         {
            "user_id":1,
-           "user_profile_pic":"https://via.placeholder.com/150/24f355",
-           "user_rating_pic":"https://picsum.photos/200",
+           "user_profile_pic":"https://i.pravatar.cc/500",
+           "user_rating_pic":"https://picsum.photos/450/300",
            "user_rating_icon":"ratings-label-dope-112",
            "pics_count":10,
            "likes":120,

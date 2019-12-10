@@ -1,3 +1,19 @@
-<p>
-  user-rating-card works!
-</p>
+<div *ngIf="userRatings?.user_id" class="user-rating-card-container" >
+  <div class="user-rating-card" [style.background-image] = "getCardBackgroundImage()">
+    <div class = "user-rating">
+      <img [src]="getUserRating()" class="user-rating-icon">
+    </div>
+
+    <div>
+      <ion-row>
+        <div class="user-photos">
+          <img [src]="userRatings?.user_profile_pic" class="user-pro" alt="" srcset="">
+          <div class="user-rating-badge">
+            <img src="../../assets/icon-camera.png">
+            {{userRatings?.pics_count}}
+          </div>
+        </div>
+      </ion-row>
+    </div>
+  </div>
+</div>
