@@ -22,5 +22,9 @@
     {{storeDetail?.store_address}}
   </div>
 
+  <div class="map-location">
+    <iframe [src]="embedGoogleMap()" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+
 </ion-card>
 </div>

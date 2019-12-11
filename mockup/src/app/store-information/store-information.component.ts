@@ -36,7 +36,7 @@ export class StoreInformationComponent implements OnInit {
   }
 
   embedGoogleMap(){
-    return this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.google.com/maps/embed/v1/place?key=AIzaSyCVA_4jw6LE8aRbeIbHjZV0ZObC-s3ag-k&q=pali`);
+    return this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.google.com/maps/embed/v1/place?key=AIzaSyBUJtB_7Ou-Sb3-mzyGLYlkdlRhEjzFCZM&q=${this.storeDetail.store_address}`);
   }
 
 
