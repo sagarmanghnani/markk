@@ -18,9 +18,14 @@ export class HomePage {
 
 
   getUserRatingOnStore():void {
+    this.reviewService.present();
     this.reviewService.getAllUserRatingForStore().subscribe(res => {
       this.userRatings = res;
-      console.log(this.userRatings);
-    });
+      this.reviewService.dismiss();
+    },
+    (err) => {
+      this.reviewService.dismiss();
+    }
+    );
   }
 }

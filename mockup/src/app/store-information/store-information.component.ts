@@ -25,10 +25,15 @@ export class StoreInformationComponent implements OnInit {
 
 
   getAllStoreDetails():void{
+    this.reviewService.present();
     this.reviewService.getAllStoreDetails().subscribe(res => {
+      this.reviewService.dismiss();
       this.storeDetail = res[0];
-      console.log(this.storeDetail);
-    });
+    },
+    (err) => {
+      this.reviewService.dismiss();
+    }
+    );
   }
 
   storeRating():string{
