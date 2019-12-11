@@ -7,6 +7,7 @@ import { StoreInformationComponent } from 'src/app/store-information/store-infor
 import { HttpClientModule } from '@angular/common/http';
 import { ReviewService } from 'src/services/review.service';
 import { UserRatingCardComponent } from 'src/app/user-rating-card/user-rating-card.component';
+import { FooterComponent } from 'src/app/footer/footer.component';
 
 
 
@@ -20,7 +21,8 @@ import { UserRatingCardComponent } from 'src/app/user-rating-card/user-rating-ca
     declarations: [
         HeaderComponent,
         StoreInformationComponent,
-        UserRatingCardComponent
+        UserRatingCardComponent,
+        FooterComponent
     ],
     providers: [
         ReviewService
@@ -28,7 +30,8 @@ import { UserRatingCardComponent } from 'src/app/user-rating-card/user-rating-ca
     exports: [
         HeaderComponent,
         StoreInformationComponent,
-        UserRatingCardComponent
+        UserRatingCardComponent,
+        FooterComponent
     ]
 })
 export class SharedModule {}
