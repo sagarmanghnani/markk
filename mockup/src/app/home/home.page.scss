@@ -13,6 +13,23 @@
         width: 80%;
         margin: auto;
     }
+    .recap{
+        display: flex;
+        padding-left: 16px;
+        color: var(--secondary-text);
+        font-size: 1rem;
+        align-items: center;
+        .history-icon{
+            height: 30px;
+        }
+        .hr-line{
+            background: var(--secondary-text);
+            height: 1px;
+            flex: 1;
+            margin-left: 12px;
+            padding-right: 16px;
+        }
+    }
 
     @media screen and (max-width:576px){
         .store-detail-container{
