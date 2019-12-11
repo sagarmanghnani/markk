@@ -37,7 +37,7 @@ export class StoreInformationComponent implements OnInit {
   }
 
   storeRating():string{
-    return `../../assets/${this.storeDetail.store_rating_icon}.png`;
+    return `assets/${this.storeDetail.store_rating_icon}.png`;
   }
 
   embedGoogleMap(){

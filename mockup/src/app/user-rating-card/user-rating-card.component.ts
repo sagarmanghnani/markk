@@ -39,7 +39,7 @@ export class UserRatingCardComponent implements OnInit {
   }
 
   getUserRating():string {
-    return `../../assets/${this.userRatings.user_rating_icon}.png`;
+    return `assets/${this.userRatings.user_rating_icon}.png`;
   }
 
   
