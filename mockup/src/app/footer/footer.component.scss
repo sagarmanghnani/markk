@@ -33,3 +33,28 @@
 .right-align{
     margin-left: auto;
 }
+
+@media screen and (max-width:567px){
+    .footer{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 2.5rem;
+        width: 100% !important;
+    }
+    .copywright{
+        flex-flow: column;
+        font-size: 0.9rem;
+        div:first-child {
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    .social-network{
+        justify-content: flex-start !important;
+        margin-top: 0 !important;
+    }
+
+    .right-align{
+        margin-left: 0;
+    }
+}

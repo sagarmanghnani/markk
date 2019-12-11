@@ -61,3 +61,21 @@
         }
     }
 }
+
+@media screen and (max-width:1150px) and (min-width:992px){
+    .user-rating-card{
+        width: 260px !important;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:601px){
+    .user-rating-card{
+        width: 220px !important;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:761px){
+    .user-rating-card{
+        width: 240px !important;
+    }
+}

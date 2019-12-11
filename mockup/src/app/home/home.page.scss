@@ -19,6 +19,7 @@
         color: var(--secondary-text);
         font-size: 1rem;
         align-items: center;
+        padding-right: 16px;
         .history-icon{
             height: 30px;
         }
@@ -36,9 +37,20 @@
         margin: auto;
     }
 
+    .user-card-container{
+        width: 80%;
+        margin: auto;
+    }
+
     @media screen and (max-width:576px){
         .store-detail-container{
             width: 100%;
         }
+
+        .user-card-container{
+            width: 100%;
+        }
     }
+
+    
 }

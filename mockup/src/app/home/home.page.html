@@ -7,14 +7,14 @@
     <app-store-information></app-store-information>
   </div>
 
-  <div *ngIf="userRatings?.length" style="width: 80%;margin: auto;" >
+  <div *ngIf="userRatings?.length" class="user-card-container" style="" >
       
     <div class="recap">
       <img src="../../assets/history.png" class="history-icon" alt="" srcset=""> 30 DAY RECAP
       <div class="hr-line"></div>
     </div>
       <ion-row>
-          <ion-col size-md = "6" size-lg = "6"  size-sm = "6" size-xs = "12" *ngFor="let userRating of userRatings">
+          <ion-col size-md = "6" size-lg = "4"  size-sm = "6" size-xs = "12" *ngFor="let userRating of userRatings">
             <app-user-rating-card [userRatings] = "userRating" ></app-user-rating-card>
           </ion-col>
       </ion-row>
